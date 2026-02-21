@@ -44,3 +44,23 @@ toggleBtn.addEventListener("click", () => {
         toggleBtn.textContent = "🌙";
     }
 });
+
+//Hidden Card
+document.addEventListener("DOMContentLoaded", function() {
+    const toggleBtn = document.getElementById("toggleCert");
+    const hiddenCerts = document.querySelectorAll(".hidden-cert");
+
+    let isExpanded = false;
+
+    toggleBtn.addEventListener("click", function() {
+        isExpanded = !isExpanded;
+
+        hiddenCerts.forEach(cert => {
+            cert.style.display = isExpanded ? "block" : "none";
+        });
+
+        toggleBtn.textContent = isExpanded
+            ? "Tampilkan Lebih Sedikit"
+            : "Tampilkan Semua";
+    });
+});
