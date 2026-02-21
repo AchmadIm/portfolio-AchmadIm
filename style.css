@@ -15,13 +15,24 @@ body {
     color: #f1f5f9;
 }
 
+/* ===== GENERAL SECTION ===== */
+.section {
+    padding: 65px 10%;
+}
+
+.section h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #38bdf8;
+}
+
 /* ===== NAVBAR BASE ===== */
 
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 25px 30px;
+    padding: 20px 30px;
     background: #0f172a;
     display: flex;
     justify-content: space-between;
@@ -46,6 +57,7 @@ body {
     color: #ffffff;
     font-weight: 500;
     transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
 }
 
 .nav-links a:hover {
@@ -169,7 +181,7 @@ body {
 
 /* ===== HERO SECTION ===== */
 .hero {
-    min-height: 80vh;
+    min-height: 85vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -500,16 +512,6 @@ body {
     color: #334155;
 }
 
-/* ===== GENERAL SECTION ===== */
-.section {
-    padding: 80px 10%;
-}
-
-.section h2 {
-    margin-bottom: 30px;
-    font-size: 2rem;
-    color: #38bdf8;
-}
 
 /* ===== CARD STYLE ===== */
 .card {
